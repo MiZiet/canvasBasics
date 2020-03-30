@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
+}
+
+.options {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: #457fca; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}
+
+.options h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.options button {
+  -webkit-appearance: none; /* WebKit */
+  -moz-appearance: none; /* Mozilla */
+  -o-appearance: none; /* Opera */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; /* CSS3 */
+  height: 40px;
+  width: 120px;
+  margin: 8px auto;
+  cursor: pointer;
+  border: 0.15em solid #cccccc;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background-color: #cccccc;
+}
+.options button:hover {
+  border-color: #7a7a7a;
+}
+canvas {
+  float: left;
+}
+.fieldset {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#figureCircle {
+  background-image: url("img/circle.png");
+  background-size: 42px 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#figureRectangle {
+  background-image: url("img/rectangle.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.slider {
+  width: 80%;
+  margin: 5px auto;
+}
+#formContent input[type="number"] {
+  font-size: 1.5rem;
+  width: 100px;
+  margin: 5px auto;
+  text-align: center;
+}
+#formContent label {
+  margin-top: 4px;
+}
+
+#colorPicker {
+  margin: 10px auto;
+  width: 75%;
+  height: 45px;
+  border-radius: 5px;
+}
+
+#random {
+  margin: 6px 40px;
+}
